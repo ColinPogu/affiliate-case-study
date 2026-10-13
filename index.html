@@ -51,9 +51,15 @@
   footer{padding:34px 0 60px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
   footer a{color:var(--accent);text-decoration:none}
   footer a:hover{text-decoration:underline}
+  .shots{display:grid;gap:16px}
+  .shots .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  figure.shot{margin:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+  figure.shot img{display:block;width:100%;height:auto}
+  figure.shot .cap{padding:11px 16px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
   @media(max-width:680px){
     .stats{grid-template-columns:1fr 1fr}
     .grid2{grid-template-columns:1fr}
+    .shots .two{grid-template-columns:1fr}
     .bar-row{grid-template-columns:110px 1fr}
     header.hero{padding:44px 0 20px}
   }
@@ -125,6 +131,31 @@
       <div class="bar-track"><div class="bar-fill" style="width:9.2%">$1,867</div></div>
     </div>
     <p class="sub" style="margin-top:14px">Ten creators in Tier 3 produce about $16.7K; the Tier 2 crowd of 129 produces about $20.4K. Same program, very different partner economics, managed separately on purpose.</p>
+  </section>
+
+  <section>
+    <h2>Straight from the live dashboard</h2>
+    <p class="sub">The same figures, unedited, from the platform that runs the program. Client and partner names are blurred.</p>
+    <div class="shots">
+      <figure class="shot">
+        <img src="img/dashboard.png" alt="Program dashboard: total revenue, total partners, ready payouts, revenue trend and top partners" loading="lazy">
+        <figcaption class="cap">Program overview: $43,685 tracked revenue across 1,046 orders, 262 partners, and the top-partner leaderboard.</figcaption>
+      </figure>
+      <div class="two">
+        <figure class="shot">
+          <img src="img/programs.png" alt="The four programs with revenue and partner counts" loading="lazy">
+          <figcaption class="cap">The four tiered programs, with revenue and partner count for each.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/analytics.png" alt="Trailing 30-day analytics: revenue, orders, AOV, ROI, CPA and link clicks" loading="lazy">
+          <figcaption class="cap">Trailing 30 days: 6.75x ROI, $6.46 CPA, $43.60 AOV, 749 link clicks.</figcaption>
+        </figure>
+      </div>
+      <figure class="shot">
+        <img src="img/payouts.png" alt="Payouts paid, unpaid and ready, routed through Tremendous" loading="lazy">
+        <figcaption class="cap">Real payouts: $5,856 sent to partners through Tremendous, with a fraud-risk check on the queue.</figcaption>
+      </figure>
+    </div>
   </section>
 
   <section>
